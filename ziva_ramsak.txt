@@ -1,0 +1,1 @@
+My name is Ziva Ramsak and I am a researcher at the National Institute of Biology, Ljubljana, Slovenia. I am part of the Department of Biotechnology and Systems Biology, where I use various systems biology approaches to study interaction between a crop plant and its pathogen attacker. For my work I mainly use Perl, R and SQL.
