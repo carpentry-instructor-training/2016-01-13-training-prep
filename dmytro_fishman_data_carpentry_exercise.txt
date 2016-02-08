@@ -1,0 +1,30 @@
+My short exercise concerns R lessons, more specifically, visualisation using ggplot2. Here is a text of the exercise:
+
+So far our result looks quite good, but it is yet far from being publishable. What are other ways one can improve it? Take a look at the ggplot2 cheat sheet (https://www.rstudio.com/wp-content/uploads/2015/08/ggplot2-cheatsheet.pdf), and write down at least three more ideas (can leave them as comments to Etherpad.
+
+Now, let's change names of axes to something more informative than 'year' and 'n' and add title to this figure:
+ggplot(data = yearly_sex_counts, aes(x = year, y = n, color = sex, group = sex)) +
+  geom_line() + 
+  facet_wrap(~ species_id) + 
+  labs(title = 'Observed species in time', x = 'Year of observation', y = 'Number of species')
+NB! For readability purposes it is highly recommended to break a line after each '+' operator or in case your line of code exceeds 80 characters.
+
+Although, thanks to our efforts, axes now have way more informative names, they are far too small to be readable. Let's change their size (and font just in sake of fun):
+ggplot(data = yearly_sex_counts, aes(x = year, y = n, color = sex, group = sex)) +
+  geom_line() + 
+  facet_wrap(~ species_id) + 
+  labs(title = 'Observed species in time', x = 'Year of observation', y = 'Number of species') + 
+  theme(text=element_text(size=20, family="Times New Roman"))
+
+Now, it looks so much better, but there are still few things that could be improved. Please, take another five minutes and try to add another one or two things, to make it look even more beautiful. Use ggplot2 cheat sheet, which we linked earlier for inspiration.
+
+Here are some ideas:
+* See if you can change thickness of the lines.
+* Can you find a way to change the name of the legend? What about its labels?
+* Using different colour palette would improve the look? (http://www.cookbook-r.com/Graphs/Colors_(ggplot2)/)
+* Advanced: Can you turn x-axis labels by some degree so that they won't overlap? (Try 90 degrees angel and then experiment more to get nicely looking diagonally placed labels)
+
+----------------------------------------------------------------------------------------------
+Another exercise suggesting is a bit more advanced, but can be in principle used as a homework:
+
+http://simplystatistics.org/2015/11/25/a-thanksgiving-dplyr-rubiks-cube-puzzle-for-you/
