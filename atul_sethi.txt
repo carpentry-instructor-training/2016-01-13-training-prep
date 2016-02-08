@@ -1,0 +1,3 @@
+My name is Atul Sethi and I'm a postdoc at Friedrich Miescher Institute for Biomedical Research (FMI), Basel.
+I work on single cell RNA-sequencing data analyses, and provide bioinformatics support to PhD students and Postdocs working in molecular biology of breast cancer.
+For daily work I use R, and sometimes Python.
